@@ -1,0 +1,10 @@
+n_totale=15
+posti_liberi=n_totale
+while True:
+    a=int(input("quanti posti vuoi prenotare?"))
+    posti_liberi=posti_liberi-a
+    if posti_liberi<0:
+        print("non ci sono abbastanza posti liberi")
+        break
+    else:
+        print("bene, sono stati prenotati ",a, "posti")
